@@ -1,0 +1,12 @@
+<%= form_for @restaurant do |form| %>
+  <%= form.label :name, "Entrar nombre" %>
+  <%= form.text_field :name %>
+
+  <%= form.label :rating, "Entrar Rating" %>
+  <%= form.text_field :rating %>
+
+  <%= form.label :address, "Entrar Address" %>
+  <%= form.text_field :address %>
+
+  <%= form.submit %>
+<% end %>

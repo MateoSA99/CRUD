@@ -1,0 +1,6 @@
+<h1>The Restaurant is:</h1>
+<h2><%= @restaurant.name %>, <%= '*' * @restaurant.rating %>, <%= @restaurant.address %></h2>
+
+<%= link_to "Edit Restaurant", edit_restaurant_path %> ||
+<%= link_to "Return to Restaurant List", restaurants_path %> ||
+<%=  button_to "Borrar", restaurant_path(@restaurant), method: :delete %>
